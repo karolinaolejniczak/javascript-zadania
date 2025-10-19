@@ -1,0 +1,35 @@
+class Drink {
+  constructor(name, size) {
+    this.name = name;
+    this.size = size;
+  }
+
+  describe() {
+    return `Napój: ${this.name}, rozmiar: ${this.size}`;
+  }
+}
+class Coffee extends Drink {
+  constructor(name, size, milk) {
+    super(name, size);
+    this.milk = milk;
+  }
+
+  describe() {
+    return `${super.describe()}, mleko: ${this.milk}`;
+  }
+}
+class Tea extends Drink {
+  constructor(name, size, teaType) {
+    super(name, size);
+    this.teaType = teaType;
+  }
+
+  describe() {
+    return `${super.describe()}, rodzaj herbaty: ${this.teaType}`;
+  }
+}
+const latte = new Coffee("Latte", "średni", "sojowe");
+const greenTea = new Tea("Zielona Herbata", "mały", "zielona");
+
+console.log(latte.describe());
+console.log(greenTea.describe());
