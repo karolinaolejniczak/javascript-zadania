@@ -1,0 +1,8 @@
+let price = 100;
+let discount = 0.2;
+function calculateDiscountedPrice(price, discount) {
+    return price - (price * discount);
+}
+let finalPrice = calculateDiscountedPrice(price, discount);
+
+console.log("Cena po rabacie:", finalPrice);

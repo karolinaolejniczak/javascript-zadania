@@ -1,0 +1,8 @@
+let temperature = 10;
+if (temperature < 0) {
+    console.log("Mróz! Ubierz się ciepło!");
+} else if (temperature >= 0 && temperature <= 15) {
+    console.log("Chłodno. Przyda się kurtka.");
+} else {
+    console.log("Ciepło! Zostaw kurtkę w domu.");
+}
